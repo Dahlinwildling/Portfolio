@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2dd590a.css",
-    "main.js": "/static/js/main.1f900927.js",
-    "static/js/787.755d6b54.chunk.js": "/static/js/787.755d6b54.chunk.js",
-    "static/media/Dahlin-passport-img.png": "/static/media/Dahlin-passport-img.d2ccd3fb1a57eda31643.png",
-    "static/media/ribbon.svg": "/static/media/ribbon.015232b876fe6c455f7955abe0856a91.svg",
-    "index.html": "/index.html",
-    "main.a2dd590a.css.map": "/static/css/main.a2dd590a.css.map",
-    "main.1f900927.js.map": "/static/js/main.1f900927.js.map",
-    "787.755d6b54.chunk.js.map": "/static/js/787.755d6b54.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.a2dd590a.css",
+    "main.js": "/Portfolio/static/js/main.49083776.js",
+    "static/js/787.755d6b54.chunk.js": "/Portfolio/static/js/787.755d6b54.chunk.js",
+    "static/media/Dahlin-passport-img.png": "/Portfolio/static/media/Dahlin-passport-img.d2ccd3fb1a57eda31643.png",
+    "static/media/ribbon.svg": "/Portfolio/static/media/ribbon.015232b876fe6c455f7955abe0856a91.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.a2dd590a.css.map": "/Portfolio/static/css/main.a2dd590a.css.map",
+    "main.49083776.js.map": "/Portfolio/static/js/main.49083776.js.map",
+    "787.755d6b54.chunk.js.map": "/Portfolio/static/js/787.755d6b54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2dd590a.css",
-    "static/js/main.1f900927.js"
+    "static/js/main.49083776.js"
   ]
 }
