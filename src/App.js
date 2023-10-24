@@ -1,8 +1,8 @@
 import React from "react";
 import './App.css';
-import { List, Space, FloatButton, Col, Divider, Row, Button } from "antd";
+import { List, Space, FloatButton, Col, Divider, Row, Button, Tabs, Card } from "antd";
 import { DownloadOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
-import profilePic from "./assets/Dahlin-passport-img.png";
+import profilePic from "./assets/Dahlin-Carneiro.png";
 import ribbon from "./assets/ribbon.svg";
 const data = [
   {
@@ -193,8 +193,150 @@ const data = [
     )
   }
 ];
+const frontendSkills = [
+  {
+    title: 'HTML',
+  },
+  {
+    title: 'CSS',
+  },
+  {
+    title: 'Javascript',
+  },
+  {
+    title: 'Typescript',
+  },
+  {
+    title: 'React JS',
+  },
+  {
+    title: 'Vue JS',
+  },
+  {
+    title: 'Angular JS',
+  },
+  {
+    title: 'Jquery',
+  },
+  {
+    title: 'Bootstrap',
+  },
+  {
+    title: 'Material UI',
+  },
+  {
+    title: 'Ant Design',
+  },
+  {
+    title: 'Next JS',
+  },
+  {
+    title: 'Tailwind CSS',
+  },
+  {
+    title: 'SASS',
+  },
+  {
+    title: 'Ionic',
+  },
+];
+const tools = [
+  {
+    title: 'Photoshop',
+  },
+  {
+    title: 'Figma',
+  },
+  {
+    title: 'Illustrator',
+  },
+  {
+    title: 'Photopea',
+  },
+  {
+    title: 'Blender',
+  },
+  {
+    title: 'Filmora',
+  },
+  {
+    title: 'XD',
+  },
+  {
+    title: 'ESLint',
+  },
+  {
+    title: 'SonarLint',
+  },
+  {
+    title: 'Git',
+  },
+  {
+    title: 'Google Analytics',
+  },
+  {
+    title: 'CorelDraw',
+  },
+  {
+    title: 'VS Code',
+  },
+  {
+    title: 'NPM',
+  },
+  {
+    title: 'Yarn',
+  },
+];
 
 function App() {
+  const items = [
+    {
+      key: '1',
+      label: <span className="text-base lg:text-xl">Frontend</span>,
+      children:
+        <List
+          grid={{
+            gutter: 12,
+            xs: 1,
+            sm: 2,
+            md: 4,
+            lg: 4,
+            xl: 5,
+            xxl: 6,
+          }}
+          className="overflow-y-auto overflow-x-hidden h-72"
+          dataSource={frontendSkills}
+          renderItem={(item) => (
+            <List.Item>
+              <Card className="text-center font-semibold text-lg border-2 border-cyan-600">{item.title}</Card>
+            </List.Item>
+          )}
+        />
+    },
+    {
+      key: '2',
+      label: <span className="text-base lg:text-xl">Tools</span>,
+      children: 
+      <List
+          grid={{
+            gutter: 12,
+            xs: 1,
+            sm: 2,
+            md: 4,
+            lg: 4,
+            xl: 5,
+            xxl: 6,
+          }}
+          className="overflow-y-auto overflow-x-hidden h-72"
+          dataSource={tools}
+          renderItem={(item) => (
+            <List.Item>
+              <Card className="text-center font-semibold text-lg border-2 border-cyan-600">{item.title}</Card>
+            </List.Item>
+          )}
+        />
+    },
+  ];
   return (
     <div className="container mx-auto my-7 px-3">
       <img src={ribbon} alt="backgroud" className="absolute w-full lg:w-4/6 top-0 right-0" />
@@ -224,31 +366,42 @@ function App() {
           </div>
         </Col>
       </Row>
+      <div>
+        <div className="w-full lg:w-4/5 mx-auto pl-6 lg:pl-7 pb-6 pt-3.5 text-3xl text-cyan-700">
+          <strong>Skills</strong>
+        </div>
+        <Tabs
+          defaultActiveKey="1"
+          tabPosition="left"
+          className="mb-7"
+          items={items}
+        />
+      </div>
       <div className="w-full lg:w-4/5 mx-auto">
-      <List
-        header={
-          <div className="uppercase text-3xl text-cyan-700">
-            <strong>Portfolio</strong>
-          </div>
-        }
-        bordered
-        dataSource={data}
-        renderItem={(item) => (
-          <List.Item key={item.title}>
-            <div>
-              <div>{item.title}</div>
-              <div>
-                <span>{item.description2}</span>
-                <a href={item.href} className="!text-cyan-600 underline font-semibold">{item.href}</a>
-              </div>
-              <div>
-                <a href={item.href2} className="!text-cyan-600 underline font-semibold">{item.href2}</a>
-              </div>
-              <div className="text-gray-400">{item.description}</div>
+        <List
+          header={
+            <div className="text-3xl text-cyan-700">
+              <strong>Projects</strong>
             </div>
-          </List.Item>
-        )}
-      />
+          }
+          bordered
+          dataSource={data}
+          renderItem={(item) => (
+            <List.Item key={item.title}>
+              <div>
+                <div>{item.title}</div>
+                <div>
+                  <span>{item.description2}</span>
+                  <a href={item.href} className="!text-cyan-600 underline font-semibold">{item.href}</a>
+                </div>
+                <div>
+                  <a href={item.href2} className="!text-cyan-600 underline font-semibold">{item.href2}</a>
+                </div>
+                <div className="text-gray-400">{item.description}</div>
+              </div>
+            </List.Item>
+          )}
+        />
       </div>
       <FloatButton.Group
         shape="square"
