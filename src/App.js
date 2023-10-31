@@ -4,6 +4,7 @@ import { List, Space, FloatButton, Col, Divider, Row, Button, Tabs, Card } from 
 import { DownloadOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import profilePic from "./assets/Dahlin-Carneiro.png";
 import ribbon from "./assets/ribbon.svg";
+import cv from "./assets/Dahlin-CV-2023.pdf"
 const data = [
   {
     title: "Property Scout",
@@ -355,12 +356,16 @@ function App() {
               I'm a passionate frontend developer based in Goa. I build creative web apps that are both visually stunning and user-friendly. I'm committed to delivering high-quality solutions that exceed expectations. With a focus on innovation and problem-solving. I'm dedicated to helping businesses and individuals achieve their digital goals.
             </div>
             <Space>
-              <Button className="bg-cyan-700 hover:bg-cyan-600 text-white hover:!text-slate-100" shape="round" icon={<DownloadOutlined />} size="large">
-                Download CV
-              </Button>
-              <Button className="bg-cyan-700 hover:bg-cyan-600 text-white hover:!text-slate-100" shape="round" icon={<PhoneOutlined />} size="large">
-                Contact me
-              </Button>
+              <a href={cv} download="Dahlin-Carneiro-CV-2023.pdf">
+                <Button className="bg-cyan-700 hover:bg-cyan-600 text-white hover:!text-slate-100" shape="round" icon={<DownloadOutlined />} size="large">
+                  Download CV
+                </Button>
+              </a>
+              <a href="tel:+919511890013">
+                <Button className="bg-cyan-700 hover:bg-cyan-600 text-white hover:!text-slate-100" shape="round" icon={<PhoneOutlined />} size="large">
+                  Contact me
+                </Button>
+              </a>
             </Space>
             <Divider />
           </div>
@@ -406,9 +411,9 @@ function App() {
       <FloatButton.Group
         shape="square"
       >
-        <FloatButton tooltip={<div>Call me</div>} type="primary" icon={<PhoneOutlined />} />
-        <FloatButton tooltip={<div>Mail me</div>} type="primary" icon={<MailOutlined />} />
-        <FloatButton tooltip={<div>Download CV</div>} type="primary" />
+        <a href="tel:+919511890013"><FloatButton tooltip={<div>Call me</div>} type="primary" icon={<PhoneOutlined />} /></a>
+        <a href="mailto:dahlincarneiro01@gmail.com"><FloatButton tooltip={<div>Mail me</div>} type="primary" icon={<MailOutlined />} /></a>
+        <a href={cv} download="Dahlin-Carneiro-CV-2023.pdf"><FloatButton tooltip={<div>Download CV</div>} type="primary" /></a>
         <FloatButton.BackTop type="primary" tooltip={<div>Scroll to top</div>} />
       </FloatButton.Group>
     </div>
