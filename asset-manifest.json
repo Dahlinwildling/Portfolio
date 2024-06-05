@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.17ab276d.css",
-    "main.js": "/Portfolio/static/js/main.9aa58ca7.js",
+    "main.js": "/Portfolio/static/js/main.438aacf1.js",
     "static/js/787.755d6b54.chunk.js": "/Portfolio/static/js/787.755d6b54.chunk.js",
-    "static/media/Dahlin-CV-2023.pdf": "/Portfolio/static/media/Dahlin-CV-2023.7d38addceaaea7135f19.pdf",
+    "static/media/Dahlin-Carneiro-CV-2024.pdf": "/Portfolio/static/media/Dahlin-Carneiro-CV-2024.c996729f21f88df1e608.pdf",
     "static/media/Dahlin-Carneiro.png": "/Portfolio/static/media/Dahlin-Carneiro.1151055ca77ea610b9fc.png",
     "static/media/ribbon.svg": "/Portfolio/static/media/ribbon.015232b876fe6c455f7955abe0856a91.svg",
     "index.html": "/Portfolio/index.html",
     "main.17ab276d.css.map": "/Portfolio/static/css/main.17ab276d.css.map",
-    "main.9aa58ca7.js.map": "/Portfolio/static/js/main.9aa58ca7.js.map",
+    "main.438aacf1.js.map": "/Portfolio/static/js/main.438aacf1.js.map",
     "787.755d6b54.chunk.js.map": "/Portfolio/static/js/787.755d6b54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17ab276d.css",
-    "static/js/main.9aa58ca7.js"
+    "static/js/main.438aacf1.js"
   ]
 }
