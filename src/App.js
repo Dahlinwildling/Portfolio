@@ -4,7 +4,7 @@ import { List, Space, FloatButton, Col, Divider, Row, Button, Tabs, Card } from 
 import { DownloadOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import profilePic from "./assets/Dahlin-Carneiro.png";
 import ribbon from "./assets/ribbon.svg";
-import cv from "./assets/Dahlin-CV-2023.pdf"
+import cv from "./assets/Dahlin-Carneiro-CV-2024.pdf"
 const data = [
   {
     title: "Property Scout",
